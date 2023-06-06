@@ -13,3 +13,6 @@ wget -qO- https://archive.kali.org/archive-key.asc | apt-key add
 
 apt update
 apt upgrade -y 
+curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+chmod u+x msfinstall
+./msfinstall
